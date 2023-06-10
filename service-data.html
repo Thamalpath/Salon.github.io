@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Kindspa - Spa and  Beauty Salon HTML5 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <style>
+            .responsive-image {
+                max-width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+    <!-- Header Area Start -->
+    <header>
+        <div class="header-top"><!--Header Top Area -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-4 d-flex align-items-center">
+                        <div class="header-logo">
+                            <a href="index1.html"><img src="./assets/img/logo-01.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-12">
+                        <div class="header-info d-flex f-right">
+                            <div class="header-support">
+                                <div class="top-icon f-left">
+                                    <i class="fas fa-check-square"></i>
+                                </div>
+                                <div class="support-text fix">
+                                    <ul>
+                                        <li class="rubik">Available Support</li>
+                                        <li class="opensens">24/7 Online Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-support">
+                                <div class="top-icon f-left">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="support-text fix">
+                                    <ul>
+                                        <li class="rubik">Working Time</li>
+                                        <li class="opensens">8:00AM - 12:00PM</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-support d-none d-xl-block">
+                                <div class="top-icon f-left">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="support-text fix">
+                                    <ul>
+                                        <li class="rubik">Get In Touch</li>
+                                        <li class="opensens">info@example.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="get-in-btn d-none d-lg-block">
+                                <a href="#" class="blue-btn">get a quote</a>
+                            </div> -->
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Top Area -->
+        <!--Header Area -->
+        <div class="header-bottom hp-1 d-none d-lg-block">
+            <div class="container">
+                <div class="main-header">
+                    <div class="row">
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="main-menu hp-1">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">home</a>
+                                        </li>
+                                        <li><a href="#about">about</a></li>
+                                        <li><a href="#service">sevices</a></li>
+                                        <li><a href="#gallery">gallery</a></li>
+                                        <li><a href="#footer">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block">
+                            <div class="search-area text-right">
+                                <a href="#" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Area -->
+        <!-- Modal Search -->
+        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <input type="text" placeholder="Search here...">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+
+    <!-- Service details content -->
+    <section>
+        <div class="container">
+            <a class="btn pink-btn mt-5 mb-5" style="color: white;"onclick="goBack()" data-animation="fadeInUp" data-delay=".6s">Back</a>
+            <!-- <button onclick="goBack()">Back</button> -->
+            <img hidden id="serviceImage1" alt="Service Image 1">
+            <img id="serviceImage2" src="" class="responsive-image" alt="Service Image 2">
+
+            <h2 class="mt-5 mb-5" id="serviceTitle"></h2>
+
+            <table id="serviceTable" class="table table-bordered mt-5" style="border-color: black;">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        
+            <h3 class="mt-5">Service Description</h3>
+            <p hidden id="serviceDescription1"></p>
+            <p class="mt-3" id="serviceDescription2"></p>
+
+            <hr style="border-color: #657583;">
+
+            <h3>Contact Details</h3>
+            <ul class="mt-3">
+                <li>484 Great West Road, Hounslow TW5 0TA</li>
+                <li>Phone: 020 8814 0991</li>
+                <li>Email: bellaviva.clinic@gmail.com</li>
+            </ul>
+
+            <hr style="border-color: #657583;">
+            <br>
+        </div>
+    </section>
+    
+
+
+    <!-- Footer Area Start -->
+    <footer id="footer" class="hp-1">
+        <div class="footer-top pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-logo">
+                                <img src="./assets/img/logo-02.png" alt="">
+                            </div>
+                            <p class="hp-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min im veniam, quis nostrud exercitation ullamco piramid.</p>
+                            <div class="footer-subscribe">
+                                <form action="mail.php">
+                                    <input type="email" placeholder="Enter your email....">
+                                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-widget mb-30">
+                            <h2>More Links</h2>
+                            <div class="footer-menu pr-0">
+                                <ul>
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Appointment</a></li>
+                                    <li><a href="#">Treatments</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Condintions</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Offers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-3 col-lg-3 d-lg-none d-xl-block col-md-6 col-sm-12">
+                        <div class="footer-widget mb-30">
+                            <h2>Twitter Feeds</h2>
+                            <div class="twitter-feeds">
+                                <div class="feeds">
+                                    <div class="feeds-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
+                                        <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
+                                    </div>
+                                </div>
+                                <div class="feeds">
+                                    <div class="feeds-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
+                                        <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
+                                    </div>
+                                </div>
+                                <div class="feeds">
+                                    <div class="feeds-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="feeds-content">
+                                        <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
+                                        <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-widget mb-30">
+                            <h2>News Feeds</h2>
+                            <div class="news-feeds">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img src="assets/img/footer/feeds-01.png" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
+                                            <span>14 July 2019</span>
+                                        </div>
+                                    </li>
+                                    <li class="media my-4">
+                                        <img src="assets/img/footer/feeds-02.png" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                        <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
+                                        <span>14 July 2019</span>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <img src="assets/img/footer/feeds-03.png" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                        <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
+                                        <span>14 July 2019</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright pt-30 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <div class="copyright style-1 mt-10">
+                            <span>Copyright By@Example - 2019</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <div class="footer-social-link text-right style-1">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+     <!-- JS here -->
+     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+     <script src="assets/js/popper.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/owl.carousel.min.js"></script>
+     <script src="assets/js/isotope.pkgd.min.js"></script>
+     <script src="assets/js/one-page-nav-min.js"></script>
+     <script src="assets/js/slick.min.js"></script>
+     <script src="assets/js/jquery.meanmenu.min.js"></script>
+     <script src="assets/js/ajax-form.js"></script>
+     <script src="assets/js/wow.min.js"></script>
+     <script src="assets/js/jquery.scrollUp.min.js"></script>
+     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+     <script src="assets/js/plugins.js"></script>
+     <script src="assets/js/main.js"></script>
+
+     <script>
+        // Retrieve service data from session storage
+        var imgSrc1 = sessionStorage.getItem('imgSrc1');
+        var imgSrc2 = sessionStorage.getItem('imgSrc2');
+        var title = sessionStorage.getItem('title');
+        var description1 = sessionStorage.getItem('description1');
+        var description2 = sessionStorage.getItem('description2');
+        var tableData1 = sessionStorage.getItem('tableData1');
+        var tableData2 = sessionStorage.getItem('tableData2');
+
+        // Set the service data in the HTML elements
+        var serviceImage1 = document.getElementById('serviceImage1');
+        var serviceImage2 = document.getElementById('serviceImage2');
+        var serviceTitle = document.getElementById('serviceTitle');
+        var serviceDescription1 = document.getElementById('serviceDescription1');
+        var serviceDescription2 = document.getElementById('serviceDescription2');
+        var tableCell1 = document.querySelector('#serviceTable tr td:first-child');
+        var tableCell2 = document.querySelector('#serviceTable tr td:last-child');
+
+        serviceImage1.setAttribute('src', imgSrc1);
+        serviceImage2.setAttribute('src', imgSrc2);
+        serviceTitle.textContent = title;
+        serviceDescription1.textContent = description1;
+        serviceDescription2.textContent = description2;
+        tableCell1.textContent = tableData1;
+        tableCell2.textContent = tableData2;
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+    
+</body>
+</html>
