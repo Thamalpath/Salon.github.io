@@ -181,15 +181,6 @@ label {
   text-shadow: none; }
 
 /*--
-    - Input Placeholder
------------------------------------------*/
-.footer-email input::-moz-placeholder {
-  color: #2a2d2c; }
-
-.footer-email input::placeholder {
-  color: #2a2d2c; }
-
-/*--
     - Common Classes
 -----------------------------------------*/
 .fix {
@@ -232,7 +223,7 @@ label {
   background: #2a2d2c; }
 
 .pink-bg {
-  background: #ec5598; }
+  background: #1b73be; }
 
 .blue-bg {
   background: #6a1b9a; }
@@ -250,7 +241,7 @@ label {
   color: #e8d2b8; }
 
 .pink-color {
-  color: #ec5598; }
+  color: #1b73be; }
 
 .blue-color {
   color: #6a1b9a; }
@@ -1288,7 +1279,7 @@ label {
 
 .blue-btn:hover, .pink-btn {
   color: #ffffff;
-  background: #ec5598; }
+  background: #1b73be; }
 
 .brown-btn, .grey-btn:hover {
   color: #ffffff;
@@ -1444,10 +1435,6 @@ header {
   .header-info {
     display: none !important; } }
 
-.logo {
-  display: inline-block;
-  padding-top: 40px; }
-
 .main-menu.hp-1 {
   padding-top: 0; }
 .main-menu.style-3 {
@@ -1518,30 +1505,12 @@ header {
 .header-bottom .main-menu ul li {
   padding: 0; }
 
-.header-btn {
-  text-align: right;
-  padding-top: 35px; }
-  .header-btn a {
-    padding: 15px 40px;
-    border: 2px solid #e8d2b8;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
-    .header-btn a i {
-      margin-right: 5px; }
-    .header-btn a:hover {
-      background: #2a2d2c;
-      color: #e8d2b8;
-      border: 2px solid #e8d2b8;
-      padding: 15px 40px; }
-
 /*----------------------------------------*/
 /* Homepage1 Header Area
 /*----------------------------------------*/
 .header-top {
-  padding: 40px 0; }
+  padding: 0;
+  background-color: #000000; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-top {
       padding: 25px 0;
@@ -1556,33 +1525,16 @@ header {
 .header-info {
   display: flex; }
 
-.header-support {
-  margin-right: 40px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-support {
-      margin-right: 25px; } }
-
-.top-icon i {
-  color: #ec5598;
-  margin-right: 10px; }
-
-.support-text {
-  line-height: 24px; }
-  .support-text li.rubik {
-    color: #6a6560; }
-  .support-text li.opensens {
-    color: #2a2d2c;
-    font-weight: 700;
-    font-family: "Domine", serif;
-    font-size: 16px; }
+  .header-logo img {
+    height: auto;
+    max-height: 130px; /* Adjust the height as per your requirement */
+    width: auto;
+    max-width: 100%; /* Ensure the logo scales properly */
+  }
 
 .header-bottom.hp-1 {
   position: relative;
   z-index: 999; }
-
-.main-header {
-  background: #ec5598;
-  padding: 0 20px; }
 
 .main-menu.hp-1 ul {
   text-align: left; }
@@ -1602,22 +1554,11 @@ header {
       .main-menu.hp-1 ul li a {
         padding: 25px 6px; } }
   .main-menu.hp-1 ul li:hover > a {
-    color: #2a2d2c; }
+    color: #a5a5a5; }
 
 .main-menu.hp-1 ul li ul.sub-menu li:hover > a:hover {
   background: none;
-  color: #ec5598; }
-
-.search-area {
-  padding-right: 10px;
-  color: #ffffff;
-  padding: 32px; }
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .search-area {
-      padding: 23px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .search-area {
-      padding: 25px 6px; } }
+  color: #a5a5a5; }
 
 .logo-area {
   padding: 40px 0; }
@@ -1724,59 +1665,6 @@ header {
   padding-top: 18px;
   padding-bottom: 18px; }
 
-/* search modal */
-#search-modal {
-  background-color: rgba(23, 26, 33, 0.95); }
-
-#search-modal .modal-dialog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: none;
-  outline: 0; }
-
-#search-modal .modal-dialog .modal-content {
-  background: 0 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: none; }
-
-#search-modal .modal-dialog .modal-content form {
-  width: 555px;
-  position: relative; }
-
-#search-modal .modal-dialog .modal-content form input {
-  width: 100%;
-  font-size: 36px;
-  border: none;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-  background: 0 0;
-  color: #fff;
-  padding-bottom: 12px;
-  padding-right: 40px; }
-
-#search-modal .modal-dialog .modal-content form input::-moz-placeholder {
-  font-size: 35px; }
-
-#search-modal .modal-dialog .modal-content form input::placeholder {
-  font-size: 35px; }
-
-#search-modal .modal-dialog .modal-content form button {
-  position: absolute;
-  right: 0;
-  margin-bottom: 3px;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.5);
-  background: 0 0;
-  border: none;
-  cursor: pointer;
-  top: 11px; }
 
 /*----------------------------------------*/
 /* 03. Slider Area
@@ -1938,7 +1826,7 @@ header {
       margin-top: 0; } }
 
 .slider-content.hp-1 h6 {
-  color: #ec5598; }
+  color: #1b73be; }
 .slider-content.hp-1 h1 {
   color: #2a2d2c; }
 .slider-content.style-3 {
@@ -2282,7 +2170,7 @@ header {
         .features-wrapper h4 a {
           font-size: 20px; } }
       .features-wrapper h4 a:hover {
-        color: #ec5598; }
+        color: #1b73be; }
   .features-wrapper p {
     color: #657583;
     margin-bottom: 18px; }
@@ -2294,7 +2182,7 @@ header {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
     .features-wrapper a:hover {
-      color: #ec5598; }
+      color: #1b73be; }
   .features-wrapper:hover {
     background-color: white;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
@@ -2758,7 +2646,7 @@ header {
   margin-bottom: 30px;
   position: relative; }
   .gallery-image::before {
-    background: #ec5598;
+    background: #1b73be;
     content: "";
     height: 100%;
     left: 0;
@@ -2808,6 +2696,611 @@ header {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%); }
+
+
+  /*----------------------------------------*/
+/*  15. Appointment
+/*----------------------------------------*/
+.appointment-area.hp-1 {
+  background: url("../img/appointment-bg-01.png") center center/cover; }
+.appointment-area.style-3 {
+  background: #ffffff; }
+
+.appointment-intro.hp-1 h6 {
+  color: #1b73be;
+  margin-bottom: 25px; }
+.appointment-intro.hp-1 h2,h4,h5 {
+  line-height: 56px;
+  color: #ffffff;
+  text-transform: unset;
+  margin-bottom: 20px; }
+  .appointment-intro.hp-1 h2{
+    font-size: 46px;
+  }
+  .appointment-intro.hp-1 h4{
+    font-size: 20px;
+  }
+
+
+.appointment-Shedule {
+  position: relative; }
+
+.appointment-img {
+  position: relative; }
+  .appointment-img::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #1b73be;
+    opacity: 0.9;
+    z-index: 1; }
+
+.appointment-text {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  text-align: center;
+  color: #ffffff; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .appointment-text {
+      padding-top: 25px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .appointment-text {
+      padding-top: 15px; } }
+  @media (max-width: 575px) {
+    .appointment-text {
+      padding-top: 15px; } }
+  .appointment-text h4 {
+    color: #ffffff;
+    font-size: 24px; }
+  .appointment-text hr {
+    width: 60px;
+    height: 2px;
+    background: #ec9ec4;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 22px; }
+  .appointment-text ul li.sunday {
+    color: #fff;
+    font-weight: 400; }
+
+@media (max-width: 767px) {
+  .appointment-content {
+    padding-top: 25px; } }
+.appointment-content .name {
+  width: 48%;
+  margin-right: 4%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .name {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .name::before {
+    position: absolute;
+    content: '\f007';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #a6a2bd;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+    @media (max-width: 575px) {
+      .appointment-content .name::before {
+        top: 35px; } }
+  .appointment-content .name:hover::before {
+    color: #1b73be; }
+.appointment-content .email {
+  width: 48%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .email {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .email::before {
+    position: absolute;
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #a6a2bd; }
+    @media (max-width: 575px) {
+      .appointment-content .email::before {
+        top: 35px; } }
+  .appointment-content .email:hover::before {
+    color: #1b73be; }
+.appointment-content .phone {
+  width: 48%;
+  margin-right: 4%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .phone {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .phone::before {
+    position: absolute;
+    content: '\f095';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 35px;
+    color: #a6a2bd; }
+  .appointment-content .phone:hover::before {
+    color: #1b73be; }
+.appointment-content .subject {
+  width: 48%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .subject {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .subject::before {
+    position: absolute;
+    content: '\f044';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 37px;
+    color: #a6a2bd; }
+  .appointment-content .subject::after {
+    position: absolute;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 41px;
+    color: #a6a2bd;
+    right: 0; }
+  .appointment-content .subject:hover::before {
+    color: #1b73be; }
+  .appointment-content .subject:hover::after {
+    color: #1b73be; }
+.appointment-content .shedule-date {
+  width: 48%;
+  margin-right: 4%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .shedule-date {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .shedule-date::before {
+    position: absolute;
+    content: '\f073';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 35px;
+    color: #a6a2bd; }
+  .appointment-content .shedule-date::after {
+    position: absolute;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 35px;
+    color: #a6a2bd;
+    right: 0; }
+  .appointment-content .shedule-date:hover::before {
+    color: #1b73be; }
+  .appointment-content .shedule-date:hover::after {
+    color: #1b73be; }
+.appointment-content .shedule-time {
+  width: 48%;
+  position: relative; }
+  @media (max-width: 575px) {
+    .appointment-content .shedule-time {
+      width: 100%;
+      margin-right: 0; } }
+  .appointment-content .shedule-time::before {
+    position: absolute;
+    content: '\f017';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 35px;
+    color: #a6a2bd; }
+  .appointment-content .shedule-time::after {
+    position: absolute;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 35px;
+    color: #a6a2bd;
+    right: 0; }
+  .appointment-content .shedule-time:hover::before {
+    color: #1b73be; }
+  .appointment-content .shedule-time:hover::after {
+    color: #1b73be; }
+.appointment-content .massage {
+  position: relative; }
+  .appointment-content .massage::before {
+    position: absolute;
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 30px;
+    color: #a6a2bd;
+    left: 0; }
+  .appointment-content .massage:hover::before {
+    color: #1b73be; }
+.appointment-content form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #272241;
+  color: #a6a2bd;
+  padding: 15px 30px;
+  margin-top: 20px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .appointment-content form input[type="text"] {
+    margin-top: 0;
+    padding-top: 0; }
+    @media (max-width: 575px) {
+      .appointment-content form input[type="text"] {
+        padding: 15px 30px;
+        margin-top: 20px; } }
+  .appointment-content form input[type="email"] {
+    margin-top: 0;
+    padding-top: 0; }
+    @media (max-width: 575px) {
+      .appointment-content form input[type="email"] {
+        padding: 15px 30px;
+        margin-top: 20px; } }
+  .appointment-content form input:hover {
+    border-color: #1b73be;
+    color: #ffffff; }
+.appointment-content form select {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #272241;
+  margin-top: 17px;
+  color: #a6a2bd;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  @media (max-width: 575px) {
+    .appointment-content form select {
+      padding: 20px 30px; } }
+  .appointment-content form select:hover {
+    border-color: #1b73be;
+    color: #ffffff; }
+.appointment-content form textarea {
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 2px solid #272241;
+  color: #a6a2bd;
+  background: transparent;
+  padding: 15px 30px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .appointment-content form textarea:hover {
+    border-color: #1b73be;
+    color: #ffffff; }
+.appointment-content form button {
+  border: none;
+  cursor: pointer;
+  margin-top: 30px; }
+
+.booking ul {
+  position: relative; }
+  .booking ul::before {
+    bottom: 32px;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #f8f8f8; }
+  .booking ul li a {
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    border: 4px solid #f8f8f8;
+    border-radius: 50%;
+    display: inline-block;
+    color: #2a2d2c;
+    font-family: "Domine", serif;
+    font-weight: 700;
+    position: relative;
+    background: #ffffff;
+    z-index: 1; }
+    .booking ul li a.active {
+      border: 4px solid #b69e59;
+      color: #b69e59; }
+
+.booking-service h4 {
+  font-size: 24px;
+  padding-top: 20px; }
+.booking-service select {
+  padding: 17px 30px;
+  width: 100%;
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+  color: #7f7f7f;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .booking-service select:hover {
+    border-bottom: 2px solid #2a2d2c; }
+.booking-service input {
+  padding: 17px 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+  background: #ffffff;
+  color: #7f7f7f;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .booking-service input:hover {
+    border-bottom: 2px solid #2a2d2c; }
+.booking-service .category {
+  position: relative; }
+  .booking-service .category::before {
+    content: '\f044';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 15px; }
+  .booking-service .category::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 15px;
+    right: 0; }
+.booking-service .select-service {
+  position: relative; }
+  .booking-service .select-service::before {
+    content: '\f044';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 15px; }
+  .booking-service .select-service::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 15px;
+    right: 0; }
+.booking-service .employee {
+  position: relative; }
+  .booking-service .employee::before {
+    content: '\f007';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 15px; }
+  .booking-service .employee::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 15px;
+    right: 0; }
+.booking-service .available {
+  position: relative; }
+  .booking-service .available::before {
+    content: '\f017';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 45px; }
+  .booking-service .available::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 45px;
+    right: 0; }
+.booking-service .day {
+  position: relative; }
+  .booking-service .day::before {
+    content: '\f133';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 45px; }
+  .booking-service .day::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 45px;
+    right: 0; }
+.booking-service .from {
+  position: relative; }
+  .booking-service .from::before {
+    content: '\f017';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 45px; }
+  .booking-service .from::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 45px;
+    right: 0; }
+.booking-service .finish {
+  position: relative; }
+  .booking-service .finish::before {
+    content: '\f133';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #b69e59;
+    top: 45px; }
+  .booking-service .finish::after {
+    content: '\f107';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #7f7f7f;
+    top: 45px;
+    right: 0; }
+
+.appointment-area.style-3 .title-heading::after {
+  top: 185px; }
+
+.grid-wrapper {
+  position: relative; }
+
+.grid-item {
+  position: relative; }
+  .grid-item::before {
+    background: #b69e59;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%; }
+
+.view-icon {
+  text-align: center;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  -webkit-transition: .3s;
+  transition: .3s;
+  left: 0;
+  position: absolute;
+  right: 0; }
+
+.appoinment-box-2 {
+  background-color: white;
+  box-shadow: 0px 16px 32px 0px rgba(223, 217, 255, 0.4);
+  margin-top: -241px; }
+
+.calculate-content input {
+  height: 60px;
+  padding-left: 38px;
+  width: 100%;
+  border: 2px solid #d3e2f0;
+  position: relative; }
+
+.calculate-content textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #d3e2f0;
+  padding-top: 28px;
+  padding-left: 40px;
+  color: #647589;
+  height: 120px; }
+
+.appoinment-box-content {
+  padding: 70px 38px 40px 70px; }
+
+.calculate-content {
+  padding: 60px; }
+  @media (max-width: 767px) {
+    .calculate-content {
+      padding: 20px; } }
+
+.appointment-form-3 textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #d3e2f0;
+  padding-top: 28px;
+  padding-left: 40px;
+  color: #647589;
+  height: 120px; }
+
+.appointment-area-3 .calculate-box .nice-select {
+  border: 2px solid #d3e2f0; }
+
+.appointment-area-3 .calculate-form input {
+  border: 2px solid #d3e2f0; }
+
+.appointment-form-2 input {
+  width: 100%; }
+
+.appointment-form-2 input {
+  width: 100%;
+  border: 0;
+  padding: 0; }
+
+.appointment-form-2 input::placeholder {
+  font-size: 24px;
+  color: #223645;
+  font-weight: 600;
+  font-family: poppins; }
+
+.appoint-ment-icon {
+  margin-right: 40px; }
+
+.appointment-form-2 label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #aab6bf;
+  font-weight: 500;
+  margin-bottom: 14px; }
+
+.appoinment-form-box {
+  padding-bottom: 27px;
+  border-bottom: 1px solid #eae5ff; }
+
+.appoinment-form-box-option {
+  padding-bottom: 8px; }
+
+.nice-select.postform::after {
+  border-bottom: 3px solid #223645;
+  border-right: 3px solid #223645;
+  content: '';
+  display: block;
+  height: 8px;
+  margin-top: -23px;
+  pointer-events: none;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 8px; }
+
 
 
 /*----------------------------------------*/
@@ -2970,7 +3463,7 @@ footer {
     right: 15px;
     padding: 21px 25px;
     border: none;
-    background: #ec5598;
+    background: #1b73be;
     color: #ffffff;
     cursor: pointer; }
 
@@ -2979,7 +3472,7 @@ footer {
   margin-bottom: 15px; }
 
 .feeds-icon {
-  color: #ec5598;
+  color: #1b73be;
   margin-right: 20px;
   padding-top: 5px; }
 
@@ -3012,7 +3505,7 @@ footer {
 .footer-social-link.style-1 a {
   background: #151128; }
   .footer-social-link.style-1 a:hover {
-    background: #ec5598;
+    background: #1b73be;
     color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

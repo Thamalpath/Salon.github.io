@@ -5,11 +5,12 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Bellaviva Skin Clinic</title>
-        <meta name="description" content="">
+        <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon"
+            href="assets/img/tab logo.png">
         <!-- Place favicon.ico in the root directory -->
 
         <!-- CSS here -->
@@ -18,115 +19,66 @@
         <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet"
+            href="assets/css/material-design-iconic-font.min.css">
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="assets/css/slick.css">
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <style>
+            .single-slider {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .single-slider::before {
+                content: "";
+                display: block;
+                padding-top: 65%; /* Adjust this value to maintain the desired aspect ratio */
+            }
+        </style>
     </head>
     <body>
 
         <!-- Header Area Start -->
         <header>
-            <div class="header-top"><!--Header Top Area -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-2 col-md-4 d-flex align-items-center">
-                            <div class="header-logo">
-                                <a href="index1.html"><img src="./assets/img/Bella_viva_logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10 col-md-12">
-                            <div class="header-info d-flex f-right">
-                                <div class="header-support">
-                                    <div class="top-icon f-left">
-                                        <i class="fas fa-check-square"></i>
-                                    </div>
-                                    <div class="support-text fix">
-                                        <ul>
-                                            <li class="rubik">Available Support</li>
-                                            <li class="opensens">24/7 Online Support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="header-support">
-                                    <div class="top-icon f-left">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <div class="support-text fix">
-                                        <ul>
-                                            <li class="rubik">Working Time</li>
-                                            <li class="opensens">8:00AM - 12:00PM</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="header-support d-none d-xl-block">
-                                    <div class="top-icon f-left">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="support-text fix">
-                                        <ul>
-                                            <li class="rubik">Get In Touch</li>
-                                            <li class="opensens">bellaviva.clinic@gmail.com</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- <div class="get-in-btn d-none d-lg-block">
-                                    <a href="#" class="blue-btn">get a quote</a>
-                                </div> -->
-                            </div>
-                            <div class="mobile-menu"></div>
-                        </div>
+            <div class="header-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-2 col-lg-2 col-md-4 d-flex justify-content-start align-items-center">
+                    <div class="header-logo text-center">
+                      <a href="index.html">
+                        <img src="./assets/img/Bellaviva white logo.png" alt="" class="img-fluid">
+                      </a>
                     </div>
-                </div>
-            </div>
-            <!--Header Top Area -->
-            <!--Header Area -->
-            <div class="header-bottom hp-1 d-none d-lg-block">
-                <div class="container">
-                    <div class="main-header">
-                        <div class="row">
-                            <div class="col-xl-10 col-lg-10 col-md-10">
-                                <div class="main-menu hp-1">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                            <li>
-                                                <a href="index.html">home</a>
-                                            </li>
-                                            <li><a href="#about">about</a></li>
-                                            <li><a href="#service">sevices</a></li>
-                                            <li><a href="#gallery">gallery</a></li>
-                                            <li><a href="#footer">contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block">
-                                <div class="search-area text-right">
-                                    <a href="#" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-10 col-md-12">
+                    <div class="header-info d-flex justify-content-end align-items-center">
+                      <div class="main-menu hp-1">
+                        <nav id="mobile-menu">
+                          <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#service">sevices</a></li>
+                            <li><a href="#gallery">gallery</a></li>
+                            <li><a href="#footer">contact</a></li>
+                          </ul>
+                        </nav>
+                      </div>
                     </div>
+                    <div class="mobile-menu"></div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!--Header Area -->
-            <!-- Modal Search -->
-            <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <form>
-                            <input type="text" placeholder="Search here...">
-                            <button>
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </header>
+          </header>      
         <!-- Header Area End -->
 
         <main>
@@ -136,51 +88,55 @@
                     <div class="single-slider hp-1 d-flex align-items-center justify-content-center" data-background="assets/img/slider/Main_image.png">
                         <div class="container">
                             <div class="slider-content hp-1">
-                                <h6 data-animation="fadeInUp" data-delay=".2s">Welcome To Our Spa Center</h6>
+                                <h6 data-animation="fadeInUp" data-delay=".2s">Welcome To Our Skin Clinic</h6>
                                 <h1 data-animation="fadeInUp" data-delay=".44s">Take Your Step <br> To Healthy Body <br> and Skin</h1>
                                 <div class="slider-btn hp-1">
                                     <a class="btn pink-btn" href="#service" data-animation="fadeInUp" data-delay=".6s">Learn More</a>
-                                    <!-- <a class="btn blue-btn" href="#" data-animation="fadeInUp" data-delay=".8s">Get appointment</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="single-slider hp-1 d-flex align-items-center justify-content-center" data-background="https://wphix.com/template/kindspa-prv/assets/img/slider/slider-05.jpg">
-                        <div class="container">
-                            <div class="slider-content hp-1">
-                                <h6 data-animation="fadeInUp" data-delay=".2s">Welcome To Our Spa Center</h6>
-                                <h1 data-animation="fadeInUp" data-delay=".44s">Spa & Beauty <br> Treatments</h1>
-                                <div class="slider-btn hp-1">
-                                    <a class="btn pink-btn" href="#service"  data-animation="fadeInUp" data-delay=".6s">Learn More</a>
-                                    <a class="btn blue-btn" href="#" data-animation="fadeInUp" data-delay=".8s">Get appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </section>
             <!-- Slider Area End -->
 
             <!-- About Area Start -->
-            <section id="about" class="about-area pos-relative hp-1 pt-165 pb-170" style="background: url('https://cdn.discordapp.com/attachments/1090898171263205417/1117196129474453546/about.png') no-repeat center center / cover;">
-                <div class="spape sp1"><img src="assets/img/doddle1.png" alt=""></div>
-                <div class="spape sp2"><img src="assets/img/doddle2.png" alt=""></div>
+            <section id="about"
+                class="about-area pos-relative hp-1 pt-165 pb-170"
+                style="background: url('https://cdn.discordapp.com/attachments/1090898171263205417/1117196129474453546/about.png') no-repeat center center / cover;">
+                <div class="spape sp1"><img src="assets/img/doddle1.png" alt></div>
+                <div class="spape sp2"><img src="assets/img/doddle2.png" alt></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-7 col-lg-8 offset-xl-5 offset-lg-4">
                             <div class="about-init">
                                 <h1>The Story of Bellaviva Skin Clinic</h1>
-                                <p>At Bellaviva Skin Clinic, we understand that all customers are individuals. We strive to offer high quality, tailored treatments to ensure that we provide our customers with the attention and results they want to achieve to look and feel their best in their skin.
+                                <p>At Bellaviva Skin Clinic, we understand that
+                                    all customers are individuals. We strive to
+                                    offer high quality, tailored treatments to
+                                    ensure that we provide our customers with
+                                    the attention and results they want to
+                                    achieve to look and feel their best in their
+                                    skin.
                                     <br><br>
-                                    Sunita Sharma, the founder of Bellaviva Skin Clinic, with her over 20 years of experience in the skincare industry, believes that healthy skin is the key to confidence. The Bellaviva Skin Team do one-to-one personal skin consultation and tailor their treatment plan according to their needs and concerns.
+                                    Sunita Sharma, the founder of Bellaviva Skin
+                                    Clinic, with her over 20 years of experience
+                                    in the skincare industry, believes that
+                                    healthy skin is the key to confidence. The
+                                    Bellaviva Skin Team do one-to-one personal
+                                    skin consultation and tailor their treatment
+                                    plan according to their needs and concerns.
                                     <br><br>
-                                    Bellaviva Skin Clinic is designed to be comfortable and spacious where we assure our clients are welcome and relaxed during their time of the treatment with us.</p>
+                                    Bellaviva Skin Clinic is designed to be
+                                    comfortable and spacious where we assure our
+                                    clients are welcome and relaxed during their
+                                    time of the treatment with us.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <!-- About Area End -->
 
             <!-- Features Area Start -->
@@ -191,7 +147,7 @@
                             <div class="section-title mb-70 text-center">
                                 <span class="small-title hp-1">Services</span>
                                 <h1 class="title-heading hp-1">What We Do</h1>
-                                <img src="assets/img/pink-border-shape.png" alt="">
+                                <img src="assets/img/border-shape.png" alt>
                             </div>
                         </div>
                     </div>
@@ -200,13 +156,16 @@
                             <div class="category-filter text-center">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-category="skin" href="#">Skin</a>
+                                        <a class="nav-link active"
+                                            data-category="skin" href="#">Skin</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-category="hair" href="#">Hair and Laser</a>
+                                        <a class="nav-link" data-category="hair"
+                                            href="#">Hair and Laser</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-category="injectables" href="#">Injectables</a>
+                                        <a class="nav-link"
+                                            data-category="injectables" href="#">Injectables</a>
                                     </li>
                                 </ul>
                             </div>
@@ -220,7 +179,6 @@
             </section>
             <!-- Features Area End -->
 
-
             <!-- Gallery  Area Start  -->
             <section id="gallery" class="gallery-area hp-1 pb-90">
                 <div class="container">
@@ -229,7 +187,7 @@
                             <div class="section-title mb-70 text-center">
                                 <span class="small-title hp-1">gallery</span>
                                 <h1 class="title-heading hp-1">Photo Gallery</h1>
-                                <img src="assets/img/pink-border-shape.png" alt="">
+                                <img src="assets/img/border-shape.png" alt>
                             </div>
                         </div>
                     </div>
@@ -238,9 +196,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-01.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-01.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-01.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-01.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -250,9 +211,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-02.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-02.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-02.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-02.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -262,9 +226,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-03.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-03.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-03.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-03.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -274,9 +241,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-04.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-04.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-04.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-04.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -286,9 +256,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-05.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-05.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-05.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-05.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -298,9 +271,12 @@
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                                 <div class="gallery-wrapper">
                                     <div class="gallery-image">
-                                        <img src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-06.png" alt="">
+                                        <img
+                                            src="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-06.png"
+                                            alt>
                                         <div class="view-icon">
-                                            <a class="popup-image" href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-06.png">
+                                            <a class="popup-image"
+                                                href="https://wphix.com/template/kindspa-prv/assets/img/gallery/gallery-06.png">
                                                 <i class="fas fa-plus"></i>
                                             </a>
                                         </div>
@@ -314,117 +290,54 @@
             </section>
             <!-- Gallery  Area End  -->
 
-        </main>
-
-        <!-- Footer Area Start -->
-        <footer id="footer" class="hp-1">
-            <div class="footer-top pt-120 pb-90">
+            <!-- Service Area Start -->
+            <section class="appointment-area hp-1 pt-120 pb-120">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12">
-                            <div class="footer-widget mb-30">
-                                <div class="footer-logo">
-                                    <img src="./assets/img/logo-02.png" alt="">
-                                </div>
-                                <p class="hp-1">484 Great West Road, Hounslow TW5 0TA</p>
-                                <p class="hp-1">020 8814 0991</p>
-                                <p class="hp-1">bellaviva.clinic@gmail.com</p>
-                                <!-- <div class="footer-subscribe">
-                                    <form action="mail.php">
-                                        <input type="email" placeholder="Enter your email....">
-                                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                                    </form>
-                                </div> -->
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                            <div class="appointment-intro hp-1">
+                                <!-- <h6 class="small-title hp-1">get your service</h6> -->
+                                <h2>Contact</h2>
+                                <h4 class="text-white">484 Great West Road, <br> Hounslow TW5 0TA</h4>
+                                <h4 class="text-white">020 8814 0991</h4>
+                                <h4 class="text-white">www.bellaviva.uk</h4>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-4 col-md-6 col-sm-12">
-                            <div class="footer-widget mb-30">
-                                <h2>More Links</h2>
-                                <div class="footer-menu pr-0">
-                                    <ul>
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Appointment</a></li>
-                                        <li><a href="#">Treatments</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms</a></li>
-                                        <li><a href="#">Condintions</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Events</a></li>
-                                        <li><a href="#">Offers</a></li>
-                                    </ul>
-                                </div>
+                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                            <div class="appointment-content">
+                                <form action="mail.php">
+                                    <div class="name f-left">
+                                        <input type="text" placeholder="Enter your name">
+                                    </div>
+                                    <div class="email fix">
+                                        <input type="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="phone f-left">
+                                        <input type="tel" placeholder="Enter your phone">
+                                    </div>
+                                    <!-- <div class="subject fix">
+                                        <select>
+                                            <option value="">Select subject</option>
+                                            <option value="">subject</option>
+                                            <option value="">subject</option>
+                                        </select>
+                                    </div>
+                                    <div class="shedule-date f-left">
+                                        <input type="date">
+                                    </div> -->
+                                    <div class="shedule-time fix">
+                                        <input type="tel" placeholder="Add Shedule Time">
+                                    </div>
+                                    <div class="massage">
+                                        <textarea rows="3" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="blue-btn">make appointment</button>
+                                </form>
                             </div>
                         </div>
-                        <!-- <div class="col-xl-3 col-lg-3 d-lg-none d-xl-block col-md-6 col-sm-12">
-                            <div class="footer-widget mb-30">
-                                <h2>Twitter Feeds</h2>
-                                <div class="twitter-feeds">
-                                    <div class="feeds">
-                                        <div class="feeds-icon">
-                                            <i class="fab fa-twitter"></i>
-                                        </div>
-                                        <div class="feeds-content">
-                                            <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
-                                            <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
-                                        </div>
-                                    </div>
-                                    <div class="feeds">
-                                        <div class="feeds-icon">
-                                            <i class="fab fa-twitter"></i>
-                                        </div>
-                                        <div class="feeds-content">
-                                            <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
-                                            <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
-                                        </div>
-                                    </div>
-                                    <div class="feeds">
-                                        <div class="feeds-icon">
-                                            <i class="fab fa-twitter"></i>
-                                        </div>
-                                        <div class="feeds-content">
-                                            <h4><a href="#">Sparkles on the Shore Photo by</a></h4>
-                                            <a href="#">ryanpernofski https://t.co/qs8VP 6oq1v https://t.co/SQHHBkIy2k</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                            <div class="footer-widget mb-30">
-                                <h2>News Feeds</h2>
-                                <div class="news-feeds">
-                                    <ul class="list-unstyled">
-                                        <li class="media">
-                                            <img src="assets/img/footer/feeds-01.png" class="mr-3" alt="...">
-                                            <div class="media-body">
-                                                <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
-                                                <span>14 July 2019</span>
-                                            </div>
-                                        </li>
-                                        <li class="media my-4">
-                                            <img src="assets/img/footer/feeds-02.png" class="mr-3" alt="...">
-                                            <div class="media-body">
-                                            <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
-                                            <span>14 July 2019</span>
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <img src="assets/img/footer/feeds-03.png" class="mr-3" alt="...">
-                                            <div class="media-body">
-                                            <h5 class="mt-0 mb-1">Lorem ipsum dolor et, consectetur.</h5>
-                                            <span>14 July 2019</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="footer-copyright pt-30 pb-30">
                 <div class="container">
                     <div class="row">
@@ -438,8 +351,8 @@
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
@@ -447,8 +360,9 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer Area End -->
+            <!-- Service Area End -->
+
+        </main>
 
         <!-- JS here -->
         <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
