@@ -82,107 +82,12 @@ function mainSlider() {
 mainSlider();
 
 
-
-// blog - active
-$('.postbox__gallery').slick({
-	dots: false,
-	arrows: true,
-	infinite: true,
-	speed: 300,
-	prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-	nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	responsive: [
-		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				infinite: true,
-			}
-		},
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
-
-
-// Video Slider
-$('.video-active').owlCarousel({
-    loop:true,
-    margin:0,
-	items:1,
-	navText: ['<i class="zmdi zmdi-long-arrow-left"></i>', '<i class="zmdi zmdi-long-arrow-right"></i>'],
-	nav:true,
-	dots:false,
-	responsive:{
-        0:{
-			items:1,
-			nav:false
-        },
-        600:{
-			items:1,
-			nav:false
-        },
-        1000:{
-			items:1,
-			nav: false,
-        },
-        1200:{
-			items:1,
-			nav:true,
-        },
-    }
-})
-
-// Brand Slider
-$('.brand-active').owlCarousel({
-    loop:true,
-    margin:80,
-		items:5,
-		nav:false,
-		dots:false,
-    responsive:{
-        0:{
-            items:2
-        },
-        550:{
-            items:3
-        },
-        767:{
-            items:3
-        },
-        992:{
-            items:5
-        }
-    }
-})
-
-
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
 	}
-});
-
-/* magnificPopup video view */
-$('.popup-video').magnificPopup({
-	type: 'iframe'
 });
 
 
@@ -272,7 +177,7 @@ var services = [
         category: "skin",
         imgSrc1: "./assets/img/services/s1.png",
         imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
-        title: "Anti-Ageing Treatment",
+        title: "Anti-Ageing Treatments",
         description1: "Bellaviva offers personalized anti-aging treatments combining medical-grade products, advanced technology, and customized plans for rejuvenated skin.",
         description2: "At Bellaviva, we offer a variety of anti-aging treatments to reduce fine lines, wrinkles, and improve skin texture. Our customized plans include medical-grade products, advanced technology like laser and ultrasound, and personalized treatment options. Our experienced professionals will diagnose your skin concerns and develop a tailored plan for your desired results. Our minimally invasive treatments have minimal downtime, pain, or discomfort. Treatments may include Botox, dermal fillers, facial peels, and laser treatments. Achieve a youthful appearance at Bellaviva.",
         link: "service-data.html",
@@ -326,7 +231,7 @@ var services = [
 
 
 	{
-		category: "hair",
+		category: "laser",
 		imgSrc1: "./assets/img/services/h1.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Laser Hair Removal",
@@ -337,7 +242,7 @@ var services = [
         tableData2: "Bellaviva Skin Clinic"
 	},
 	{
-		category: "hair",
+		category: "laser",
 		imgSrc1: "./assets/img/services/h2.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-05.jpg",
 		title: "Mole & Wart Removal",
@@ -348,7 +253,7 @@ var services = [
         tableData2: "Bellaviva Skin Clinic"
 	},
 	{
-		category: "hair",
+		category: "laser",
 		imgSrc1: "./assets/img/services/h3.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Tattoo Removal",
@@ -359,7 +264,7 @@ var services = [
         tableData2: "Bellaviva Skin Clinic"
 	},
 	{
-		category: "hair",
+		category: "laser",
 		imgSrc1: "./assets/img/services/h4.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Hair Loss Treatment",
@@ -370,7 +275,7 @@ var services = [
         tableData2: "Bellaviva Skin Clinic"
 	},
 	{
-		category: "hair",
+		category: "laser",
 		imgSrc1: "./assets/img/services/h5.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Hair Transplant",

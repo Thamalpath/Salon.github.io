@@ -19,14 +19,15 @@
         <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet"
-            href="assets/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="assets/css/slick.css">
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
 
         <style>
             .single-slider {
@@ -43,6 +44,68 @@
                 display: block;
                 padding-top: 65%; /* Adjust this value to maintain the desired aspect ratio */
             }
+
+            .carousel-item {
+                margin-bottom: 30px;
+            }
+
+            .reviewer-img {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+                object-fit: cover;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                font-size: 24px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .carousel-control-prev {
+                left: -60px;
+            }
+
+            .carousel-control-next {
+                right: -60px;
+            }
+
+            .carousel-indicators {
+                position: absolute;
+                bottom: -30px;
+                /* left: 50%; */
+                /* transform: translateX(-50%); */
+                display: flex;
+                justify-content: center;
+            }
+
+            .carousel-indicators li {
+                border-radius: 50%;
+                width: 12px;
+                height: 12px;
+                background-color: rgba(0, 0, 0, 0.3);
+                margin: 0 4px;
+            }
+
+            .carousel-indicators .active {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            @media (max-width: 576px) {
+                .reviewer-img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+
         </style>
     </head>
     <body>
@@ -68,7 +131,8 @@
                             <li><a href="#about">about</a></li>
                             <li><a href="#service">sevices</a></li>
                             <li><a href="#gallery">gallery</a></li>
-                            <li><a href="#footer">contact</a></li>
+                            <li><a href="#testimonials">testimonials</a></li>
+                            <li><a href="#contact">contact</a></li>
                           </ul>
                         </nav>
                       </div>
@@ -140,7 +204,7 @@
             <!-- About Area End -->
 
             <!-- Features Area Start -->
-            <section id="service" class="features-area pt-70 pb-90">
+            <section id="service" class="features-area pt-70 pb-70">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -156,21 +220,27 @@
                             <div class="category-filter text-center">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a class="nav-link active"
+                                        <a class="nav-link f-category active"
                                             data-category="skin" href="#">Skin</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-category="hair"
-                                            href="#">Hair and Laser</a>
+                                        <a class="nav-link f-category" data-category="body"
+                                            href="#">Body</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link"
+                                        <a class="nav-link f-category" data-category="laser"
+                                            href="#">Laser</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link f-category"
                                             data-category="injectables" href="#">Injectables</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <br>
                     <div class="row services-list">
                         <!-- Service items will be dynamically generated here -->
@@ -290,20 +360,91 @@
             </section>
             <!-- Gallery  Area End  -->
 
-            <!-- Service Area Start -->
-            <section class="appointment-area hp-1 pt-120 pb-120">
+            <!-- Testimonials Area Start -->
+            <section id="testimonials" class="testimonials-area hp-1 pb-90 gtco-testimonials">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="section-title mb-70 text-center">
+                        <span class="small-title hp-1">Testimonials</span>
+                        <h1 class="title-heading hp-1">Our Valuable Clients</h1>
+                        <img src="assets/img/border-shape.png" alt>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                          <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+                        </ol>
+              
+                        <!-- Testimonial Slides -->
+                        <div class="carousel-inner">
+                          <!-- Slide 1 -->
+                          <div class="carousel-item active">
+                            <div class="testimonial-item text-center">
+                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 1">
+                              <h3 class="reviewer-name mt-3">John Doe</h3>
+                              <p class="reviewer-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                            </div>
+                          </div>
+              
+                          <!-- Slide 2 -->
+                          <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 2">
+                              <h3 class="reviewer-name mt-3">Jane Smith</h3>
+                              <p class="reviewer-message">Fusce et gravida lectus, ac convallis massa. Curabitur eu elit eget arcu condimentum finibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                            </div>
+                          </div>
+              
+                          <!-- Slide 3 -->
+                          <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 3">
+                              <h3 class="reviewer-name mt-3">Michael Johnson</h3>
+                              <p class="reviewer-message">Praesent ultricies, felis et congue tincidunt, sem sem fermentum velit, sit amet efficitur mi purus non libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <!-- Controls -->
+                        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <!-- Testimonials  Area End  -->
+
+            <!-- Footer Area Start -->
+            <section id="contact" class="appointment-area hp-1 pt-120 pb-120">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                             <div class="appointment-intro hp-1">
-                                <!-- <h6 class="small-title hp-1">get your service</h6> -->
-                                <h2>Contact</h2>
-                                <h4 class="text-white">484 Great West Road, <br> Hounslow TW5 0TA</h4>
-                                <h4 class="text-white">020 8814 0991</h4>
-                                <h4 class="text-white">www.bellaviva.uk</h4>
+                                <h3 class="text-white">WE ARE HERE</h3>
+                                <h5 class="text-white">484 Great West Road, Hounslow TW5 0TA</h5>
+
+                                <h3 class="text-white">WE ARE OPEN</h3>
+                                <h5 class="text-white">Monday - Saturday :- 10.A.M to 7.P.M <br> Sunday Closed</h5>
+
+                                <h3 class="text-white">CALL US</h3>
+                                <h5 class="text-white">+44(0) 785 402 3538 <br> +44(0) 208 569 4545 <br> info@bellavivaskin.uk</h5>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                             <div class="appointment-content">
                                 <form action="mail.php">
                                     <div class="name f-left">
@@ -365,7 +506,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Service Area End -->
+            <!-- Footer Area End -->
 
         </main>
 
@@ -386,5 +527,8 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script src="assets/js/swiper.min.js"></script>
+        </script>
     </body>
 </html>
