@@ -46,7 +46,7 @@
             }
 
             .carousel-item {
-                margin-bottom: 30px;
+            margin-bottom: 30px;
             }
 
             .reviewer-img {
@@ -80,8 +80,6 @@
             .carousel-indicators {
                 position: absolute;
                 bottom: -30px;
-                /* left: 50%; */
-                /* transform: translateX(-50%); */
                 display: flex;
                 justify-content: center;
             }
@@ -99,10 +97,21 @@
             }
 
             @media (max-width: 576px) {
-                .reviewer-img {
-                    width: 80px;
-                    height: 80px;
-                }
+            .reviewer-img {
+                width: 60px; 
+                height: 60px; 
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next{
+                display: none;
+            }
+
+            .carousel-indicators li {
+                width: 8px; 
+                height: 8px; 
+                margin: 0 2px; 
+            }
             }
 
 
@@ -118,7 +127,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-4 d-flex justify-content-start align-items-center">
                     <div class="header-logo text-center">
                       <a href="index.html">
-                        <img src="./assets/img/Bellaviva white logo.png" alt="" class="img-fluid">
+                        <img src="./assets/img/bellaviva_logo.png" alt="" class="img-fluid">
                       </a>
                     </div>
                   </div>
@@ -175,7 +184,7 @@
                         <div class="col-xl-7 col-lg-8 offset-xl-5 offset-lg-4">
                             <div class="about-init">
                                 <h1>The Story of Bellaviva Skin Clinic</h1>
-                                <p>At Bellaviva Skin Clinic, we understand that
+                                <p class="text-justify">At Bellaviva Skin Clinic, we understand that
                                     all customers are individuals. We strive to
                                     offer high quality, tailored treatments to
                                     ensure that we provide our customers with
@@ -367,7 +376,7 @@
                     <div class="col-xl-12">
                       <div class="section-title mb-70 text-center">
                         <span class="small-title hp-1">Testimonials</span>
-                        <h1 class="title-heading hp-1">Our Valuable Clients</h1>
+                        <h1 class="title-heading hp-1">What Our Client Say</h1>
                         <img src="assets/img/border-shape.png" alt>
                       </div>
                     </div>
@@ -387,27 +396,27 @@
                           <!-- Slide 1 -->
                           <div class="carousel-item active">
                             <div class="testimonial-item text-center">
-                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 1">
-                              <h3 class="reviewer-name mt-3">John Doe</h3>
-                              <p class="reviewer-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                              <img src="assets/img/client/1.jpg" class="rounded-circle reviewer-img" alt="Reviewer 1">
+                              <h3 class="reviewer-name mt-3">Sarah T</h3>
+                              <p class="reviewer-message">Bellaviva Skin Clinic transformed my severe acne. Personalized treatment plan targeted root causes, and my skin transformed in months. Incredibly knowledgeable and caring team. Highly recommend for acne sufferers.</p>
                             </div>
                           </div>
               
                           <!-- Slide 2 -->
                           <div class="carousel-item">
                             <div class="testimonial-item text-center">
-                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 2">
-                              <h3 class="reviewer-name mt-3">Jane Smith</h3>
-                              <p class="reviewer-message">Fusce et gravida lectus, ac convallis massa. Curabitur eu elit eget arcu condimentum finibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                              <img src="assets/img/client/3.jpg" class="rounded-circle reviewer-img" alt="Reviewer 2">
+                              <h3 class="reviewer-name mt-3">Emily Sullivan</h3>
+                              <p class="reviewer-message">Laser hair removal at Bellaviva was life-changing. The treatment was effective, and the results exceeded my expectations. Professional staff, comfortable environment, and long-lasting hair-free skin. Highly recommend their laser hair removal service.</p>
                             </div>
                           </div>
               
                           <!-- Slide 3 -->
                           <div class="carousel-item">
                             <div class="testimonial-item text-center">
-                              <img src="assets/img/services/i1.png" class="rounded-circle reviewer-img" alt="Reviewer 3">
-                              <h3 class="reviewer-name mt-3">Michael Johnson</h3>
-                              <p class="reviewer-message">Praesent ultricies, felis et congue tincidunt, sem sem fermentum velit, sit amet efficitur mi purus non libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tristique velit, ac vulputate risus.</p>
+                              <img src="assets/img/client/2.jpg" class="rounded-circle reviewer-img" alt="Reviewer 3">
+                              <h3 class="reviewer-name mt-3">Sophia Anderson</h3>
+                              <p class="reviewer-message">Bellaviva Skin Clinic's skin lightening treatment worked wonders for me. The personalized approach effectively reduced dark spots and improved my skin tone. The results were remarkable, and the staff provided exceptional care. I highly recommend their skin lightening treatment for anyone seeking a radiant and even complexion.</p>
                             </div>
                           </div>
                         </div>
@@ -426,6 +435,7 @@
                   </div>
                 </div>
               </section>
+              
             <!-- Testimonials  Area End  -->
 
             <!-- Footer Area Start -->

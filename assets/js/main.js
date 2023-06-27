@@ -118,8 +118,6 @@ $('.portfolio-menu button').on('click', function(event) {
 });
 
 
-
-
 // scrollToTop
 $.scrollUp({
 	scrollName: 'scrollUp', // Element ID
@@ -135,38 +133,6 @@ $.scrollUp({
 // WOW active
 new WOW().init();
 
-
-	// map
-	function basicmap() {
-		// Basic options for a simple Google Map
-		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-		var mapOptions = {
-			// How zoomed in you want the map to start at (always required)
-			zoom: 11,
-			scrollwheel: false,
-			// The latitude and longitude to center the map (always required)
-			center: new google.maps.LatLng(40.6700, -73.9400), // New York
-			// This is where you would paste any style found on Snazzy Maps.
-			styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "weight": "2.00" }] }, { "featureType": "all", "elementType": "geometry.stroke", "stylers": [{ "color": "#9c9c9c" }] }, { "featureType": "all", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.land_parcel", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#372305" }, { "saturation": "-25" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#eeeeee" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7b7b7b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#c8d7d4" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#070707" }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }]
-		};
-		// Get the HTML DOM element that will contain your map
-		// We are using a div with id="map" seen below in the <body>
-		var mapElement = document.getElementById('contact-map');
-
-		// Create the Google Map using our element and options defined above
-		var map = new google.maps.Map(mapElement, mapOptions);
-
-		// Let's also add a marker while we're at it
-		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(40.6700, -73.9400),
-			map: map,
-			title: 'Cryptox'
-		});
-	}
-	if ($('#contact-map').length != 0) {
-		google.maps.event.addDomListener(window, 'load', basicmap);
-	}
-
 })(jQuery);
 
 
@@ -180,7 +146,7 @@ var services = [
         title: "Anti-Ageing Treatments",
         description1: "Bellaviva offers personalized anti-aging treatments combining medical-grade products, advanced technology, and customized plans for rejuvenated skin.",
         description2: "At Bellaviva, we offer a variety of anti-aging treatments to reduce fine lines, wrinkles, and improve skin texture. Our customized plans include medical-grade products, advanced technology like laser and ultrasound, and personalized treatment options. Our experienced professionals will diagnose your skin concerns and develop a tailored plan for your desired results. Our minimally invasive treatments have minimal downtime, pain, or discomfort. Treatments may include Botox, dermal fillers, facial peels, and laser treatments. Achieve a youthful appearance at Bellaviva.",
-        link: "service-data.html",
+        link: "anti-ageing.html",
         tableData1: "1 hr",
         tableData2: "Bellaviva Skin Clinic"
     },
@@ -209,7 +175,7 @@ var services = [
 	{
 		category: "skin",
 		imgSrc1: "./assets/img/services/s4.png",
-		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-05.jpg",
+		imgSrc2: "./assets/img/services/Hydra_Facial.jpg",
 		title: "Hydra Facial",
 		description1: "Bellaviva offers Hydra Facial—a non-invasive, multi-step treatment for immediate, radiant skin results.",
         description2: "At Bellaviva, we offer the Hydra Facial, a non-invasive, multi-step treatment that combines cleansing, exfoliation, extractions, hydration, and antioxidant protection in one procedure. This non-surgical and non-invasive treatment delivers immediate results, enhancing the overall health and appearance of your skin. The Hydra Facial utilizes a specialized serum delivery system to cleanse, exfoliate, extract impurities, and hydrate your skin. Our team of skilled professionals will personalize a treatment plan to target your specific needs, helping you achieve your desired look while reducing fine lines, wrinkles, improving skin tone and texture, and minimizing the appearance of dark spots. ",
@@ -219,13 +185,36 @@ var services = [
 	},
 	{
 		category: "skin",
-		imgSrc1: "./assets/img/services/s5.png",
+		imgSrc1: "./assets/img/services/s5.jpg",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Pigmentation Treatment",
 		description1: "Bellaviva offers personalized pigmentation treatments using advanced technology and medical-grade products to reduce dark spots and uneven skin tone. Achieve a radiant complexion with our customized treatment plans.",
         description2: "At Bellaviva, we provide a range of pigmentation treatments to diminish dark spots and achieve a more even skin tone. Our customized approach combines medical-grade products and advanced technology to safely and effectively enhance your complexion. Our team of skilled professionals will collaborate with you to create a personalized treatment plan tailored to your desired outcome. Our pigmentation treatments may incorporate techniques such as chemical peels, laser therapy, and specialized skincare products to attain optimal results.",
         link: "service-data.html",
         tableData1: "1 hr",
+        tableData2: "Bellaviva Skin Clinic"
+	},
+	{
+		category: "skin",
+		imgSrc1: "./assets/img/services/s6.png",
+		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-05.jpg",
+		title: "Acne/Rosacea",
+		description1: "Effective acne and rosacea treatments at Bellaviva Skin Clinic. Clearer skin and improved complexion. Visit us for personalized care.",
+        description2: "Bellaviva Skin Clinic specializes in personalized treatments for acne and rosacea. Our advanced therapies specifically address the underlying causes of these conditions, effectively reducing inflammation and enhancing the overall appearance of your skin. With our experienced team, you can trust that your skin will receive the best care possible. Take the first step towards clearer and healthier skin by visiting us today. We are committed to providing exceptional and tailored treatments just for you.",
+        link: "service-data.html",
+        tableData1: "1 hr",
+        tableData2: "Bellaviva Skin Clinic"
+	},
+
+	{
+		category: "body",
+		imgSrc1: "./assets/img/services/b1.jpg",
+		imgSrc2: "./assets/img/services/b1_back.jpg",
+		title: "Holistic Massages",
+		description1: "Indulge in our holistic massage therapy at Bellaviva Skin Clinic, where skilled therapists combine relaxation techniques and natural remedies to rejuvenate your body and mind, promoting overall wellness and inner harmony.",
+        description2: "Indulge in our holistic massage therapy at Bellaviva Skin Clinic, where skilled therapists combine relaxation techniques and natural remedies to rejuvenate your body and mind, promoting overall wellness and inner harmony.",
+        link: "holistic.html",
+        tableData1: "30m | 30m | 90m",
         tableData2: "Bellaviva Skin Clinic"
 	},
 
@@ -331,83 +320,81 @@ var services = [
         tableData1: "2 hr",
         tableData2: "Bellaviva Skin Clinic"
 	},
-	// Add more service items with category, image source, title, description, link, and table data
-	// Example:
-	// {
-	//     category: "skin",
-	//     imgSrc: "./assets/img/services/services-03.png",
-	//     title: "Service Title",
-	//     description: "Service Description",
-	//     link: "#",
-	//     tableData1: "Sample Data 11",
-	//     tableData2: "Sample Data 12"
-	// }
 ];
 
 	// Function to generate service items based on the provided category
-	function generateServiceItems(category) {
-		var servicesList = document.querySelector('.services-list');
-		servicesList.innerHTML = '';
+function generateServiceItems(category) {
+    var servicesList = document.querySelector('.services-list');
+    servicesList.innerHTML = '';
 
-		var filteredServices = services.filter(function (service) {
-			return category === 'all' || service.category === category;
-		});
+    var filteredServices = services.filter(function (service) {
+        return category === 'all' || service.category === category;
+    });
 
-		filteredServices.forEach(function (service) {
-			var serviceItem = document.createElement('div');
-			serviceItem.className = 'col-xl-4 col-lg-4 col-md-6';
+    filteredServices.forEach(function (service) {
+        var serviceItem = document.createElement('div');
+        serviceItem.className = 'col-xl-4 col-lg-4 col-md-6';
 
-			var serviceItemContent = `
-				<div class="service-item mb-30">
-					<div class="service-img">
-						<img src="${service.imgSrc1}" alt="">
-					</div>
-					<div class="service-content text-center">
-						<h4>${service.title}</h4>
-						<p>${service.description1}</p>
-						<p hidden>${service.description2}</p>
-						<table hidden>
-							<tr>
-								<td>${service.tableData1}</td>
-								<td>${service.tableData2}</td>
-							</tr>
-						</table>
-						<a href="service-data.html" class="service-link" data-img1="${service.imgSrc1}" data-img2="${service.imgSrc2}" data-title="${service.title}" data-description1="${service.description1}" data-description2="${service.description2}" data-tableData1="${service.tableData1}" data-tableData2="${service.tableData2}"><i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-			`;
+        var serviceItemContent = `
+            <div class="service-item mb-30">
+                <div class="service-img">
+                    <img src="${service.imgSrc1}" alt="">
+                </div>
+                <div class="service-content text-center">
+                    <h4>${service.title}</h4>
+                    <p>${service.description1}</p>
+                    <p hidden>${service.description2}</p>
+                    <table hidden>
+                        <tr>
+                            <td>${service.tableData1}</td>
+                            <td>${service.tableData2}</td>
+                        </tr>
+                    </table>
+                    ${
+                        service.link === 'anti-ageing.html'
+                        ? `<a href="anti-ageing.html" class="service-link" data-img1="${service.imgSrc1}" data-img2="${service.imgSrc2}" data-title="${service.title}" data-description1="${service.description1}" data-description2="${service.description2}" data-tableData1="${service.tableData1}" data-tableData2="${service.tableData2}"><i class="fas fa-arrow-right"></i></a>`
+                        : (service.link === 'holistic.html'
+                            ? `<a href="holistic.html" class="service-link" data-img1="${service.imgSrc1}" data-img2="${service.imgSrc2}" data-title="${service.title}" data-description1="${service.description1}" data-description2="${service.description2}" data-tableData1="${service.tableData1}" data-tableData2="${service.tableData2}"><i class="fas fa-arrow-right"></i></a>`
+                            : `<a href="service-data.html" class="service-link" data-img1="${service.imgSrc1}" data-img2="${service.imgSrc2}" data-title="${service.title}" data-description1="${service.description1}" data-description2="${service.description2}" data-tableData1="${service.tableData1}" data-tableData2="${service.tableData2}"><i class="fas fa-arrow-right"></i></a>`
+                        )
+                    }
+                </div>
+            </div>
+        `;
 
-			serviceItem.innerHTML = serviceItemContent;
-			servicesList.appendChild(serviceItem);
-		});
+        serviceItem.innerHTML = serviceItemContent;
+        servicesList.appendChild(serviceItem);
+    });
 
-		// Add event listeners to the service links
-		var serviceLinks = document.querySelectorAll('.service-link');
-		serviceLinks.forEach(function (link) {
-			link.addEventListener('click', function (event) {
-				event.preventDefault();
-				var imgSrc1 = this.getAttribute('data-img1');
-				var imgSrc2 = this.getAttribute('data-img2');
-				var title = this.getAttribute('data-title');
-				var description1 = this.getAttribute('data-description1');
-				var description2 = this.getAttribute('data-description2');
-				var tableData1 = this.getAttribute('data-tableData1');
-				var tableData2 = this.getAttribute('data-tableData2');
+    // Add event listeners to the service links
+    var serviceLinks = document.querySelectorAll('.service-link');
+    serviceLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var imgSrc1 = this.getAttribute('data-img1');
+            var imgSrc2 = this.getAttribute('data-img2');
+            var title = this.getAttribute('data-title');
+            var description1 = this.getAttribute('data-description1');
+            var description2 = this.getAttribute('data-description2');
+            var tableData1 = this.getAttribute('data-tableData1');
+            var tableData2 = this.getAttribute('data-tableData2');
+            var linkUrl = this.getAttribute('href'); // Get the link URL
 
-				// Save service data in session storage for access in the service-data.html
-				sessionStorage.setItem('imgSrc1', imgSrc1);
-				sessionStorage.setItem('imgSrc2', imgSrc2);
-				sessionStorage.setItem('title', title);
-				sessionStorage.setItem('description1', description1);
-				sessionStorage.setItem('description2', description2);
-				sessionStorage.setItem('tableData1', tableData1);
-				sessionStorage.setItem('tableData2', tableData2);
+            // Save service data in session storage for access in the corresponding page
+            sessionStorage.setItem('imgSrc1', imgSrc1);
+            sessionStorage.setItem('imgSrc2', imgSrc2);
+            sessionStorage.setItem('title', title);
+            sessionStorage.setItem('description1', description1);
+            sessionStorage.setItem('description2', description2);
+            sessionStorage.setItem('tableData1', tableData1);
+            sessionStorage.setItem('tableData2', tableData2);
 
-				// Redirect to service-data.html
-            	window.location.href = 'service-data.html';
-			});
-		});
-	}
+            // Redirect to the corresponding page based on the link URL
+            window.location.href = linkUrl;
+        });
+    });
+}
+
 
 	// Event listener for category filter
 	var categoryLinks = document.querySelectorAll('.category-filter a');

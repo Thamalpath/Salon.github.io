@@ -122,10 +122,10 @@ h6 a {
   color: inherit; }
 
 h1 {
-  font-size: 60px; }
+  font-size: 50px; }
 
 h2 {
-  font-size: 46px; }
+  font-size: 40px; }
 
 h3 {
   font-size: 28px; }
@@ -1526,10 +1526,8 @@ header {
   display: flex; }
 
   .header-logo img {
+    max-width: 230px; 
     height: auto;
-    max-height: 130px; /* Adjust the height as per your requirement */
-    width: auto;
-    max-width: 100%; /* Ensure the logo scales properly */
   }
 
 .header-bottom.hp-1 {
