@@ -147,7 +147,7 @@ li {
   list-style: none; }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 26px;
   color: #6a6560;
@@ -1526,8 +1526,8 @@ header {
   display: flex; }
 
   .header-logo img {
-    max-width: 170px; 
-    height: auto;
+    max-width: 300px; 
+    height: 63px;
   }
 
 .header-bottom.hp-1 {
@@ -2705,6 +2705,36 @@ header {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%); }
 
+    .image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end; /* Changed to align overlay at the bottom */
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      padding: 20px;
+      color: #fff;
+    }
+    
+    .image-overlay h3,
+    .image-overlay h5 {
+      font-family: "Rubik", sans-serif;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+    .image-overlay h3 {
+      font-size: 20px;
+      padding: 6px;
+    }
+    .image-overlay h5 {
+      font-size: 16px;
+    }
+    
+
 .gallery-image {
   margin-bottom: 30px;
   position: relative; }
@@ -2776,7 +2806,8 @@ header {
   line-height: 35px;
   color: #ffffff;
   text-transform: unset;
-  margin-bottom: 20px; }
+  /* margin-bottom: 10px;  */
+}
   .appointment-intro.hp-1 h2{
     font-size: 46px;
   }

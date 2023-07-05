@@ -245,7 +245,7 @@ var services = [
 		category: "laser",
 		imgSrc1: "./assets/img/services/h3.png",
 		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
-		title: "Tattoo Removal",
+		title: "Micro - Pigmentation Treatment",
 		description1: "At Bellaviva, our advanced laser technology safely removes or fades tattoos of any size, color, or location. Personalized treatment plans ensure optimal results.",
         description2: "At Bellaviva, we provide safe and effective tattoo removal services utilizing advanced laser technology. Our treatments effectively remove or fade unwanted tattoos, regardless of their size, color, or location on the body. Our experienced professionals will collaborate with you to develop a personalized treatment plan for optimal results. The number of sessions required may vary based on the tattoo's size, color, location, and individual skin type and healing process. ",
         link: "service-data.html",

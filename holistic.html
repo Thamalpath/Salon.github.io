@@ -5,11 +5,12 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Bellaviva Skin Clinic</title>
-        <meta name="description" content="">
+        <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/tab logo.png">
+        <link rel="shortcut icon" type="image/x-icon"
+            href="assets/img/tab logo.png">
         <!-- Place favicon.ico in the root directory -->
 
         <!-- CSS here -->
@@ -18,13 +19,15 @@
         <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet"
+            href="assets/css/material-design-iconic-font.min.css">
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="assets/css/slick.css">
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
         <style>
             .responsive-image {
@@ -34,198 +37,396 @@
             #serviceTable{
                 max-width: 300px;
             }
-            /* List with bullets */
-            .list-bullets {
-                list-style: none;
-            }
-
-            .list-bullets li {
-                display: flex;
-                align-items: center;
-            }
-
-            .list-bullets li::before {
-                content: '';
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background: #5784d7;
-                border: 2px solid #8fb3f5;
-                display: block;
-                margin-right: 1rem;
+            .contact-info i {
+            margin-right: 10px;
             }
         </style>
     </head>
 
     <body>
 
-    <!-- Header Area Start -->
-    <header>
-        <div class="header-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-2 col-lg-2 col-md-4 d-flex justify-content-start align-items-center">
-                <div class="header-logo text-center">
-                    <a href="index.html">
-                      <img src="./assets/img/bellaviva_logo.png" alt="" class="img-fluid">
-                    </a>
-                </div>
-              </div>
-              <div class="col-xl-10 col-lg-10 col-md-12">
-                <div class="header-info d-flex justify-content-end align-items-center">
-                  <div class="main-menu hp-1">
-                    <nav id="mobile-menu">
-                      <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#service">sevices</a></li>
-                        <li><a href="#gallery">gallery</a></li>
-                        <li><a href="#footer">contact</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-                <div class="mobile-menu"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>      
-    <!-- Header Area End -->
-
-
-    <!-- Service details content -->
-    <section>
-        <div class="container">
-            <a class="btn pink-btn mt-5 mb-5" style="color: white;" onclick="goBack()" data-animation="fadeInUp" data-delay=".6s">Back</a>
-            <img hidden id="serviceImage1" alt="Service Image 1">
-            <img id="serviceImage2" src="" class="responsive-image" alt="Service Image 2">
-    
-            <h1 class="mt-5 mb-5" id="serviceTitle"></h1>
-    
-            <div class="table-responsive">
-                <table id="serviceTable" class="table table-bordered">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-    
-            <h2 class="mt-5">Service Description</h2>
-            <p hidden id="serviceDescription1"></p>
-            <p class="mt-3 text-justify" id="serviceDescription2"></p>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <ul class="list-bullets">
-                        <li class="mb-2">Swedish Massage</li>
-                        <li class="mb-2">Aromatherapy Massage</li>
-                        <li class="mb-2">Thai Massage</li>
-                        <li class="mb-2">Thai Herbal Compress </li>
-                        <li class="mb-2">Deep Tissue Massage</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-bullets">
-                        <li class="mb-2">Indian head Massage</li>
-                        <li class="mb-2">Hot Stone Massage</li>
-                        <li class="mb-2">Hawaiian Lomi Lomi</li>
-                        <li class="mb-2">Reflexology Massage </li>
-                        <li class="mb-2">Ayurvedic Massage</li>
-                    </ul>
-                </div>
-            </div>
-
-            <p class="mt-3 text-justify">These treatments are designed to address specific needs, promote detoxification, improve skin texture, and support overall well-being. Our skilled therapists will customize these services to meet your unique requirements, ensuring a revitalizing and satisfying experience.            </p>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <ul class="list-bullets">
-                        <li class="mb-2">Body Lymphatic Treatment | 60mins</li>
-                        <li class="mb-2">Body Exfoliation Therapy | 60mins</li>
-                        <li class="mb-2">Body Slimming Therapy | 1h 20mins</li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr style="border-color: #657583;">
-    
-            <h2>Contact Details</h2>
-            <ul class="mt-3">
-                <li>484 Great West Road, Hounslow TW5 0TA</li>
-                <li>Phone: 020 8814 0991</li>
-                <li>Email: bellaviva.clinic@gmail.com</li>
-            </ul>
-    
-            <hr style="border-color: #657583;">
-            <br>
-        </div>
-    </section>
-    
-    
-    <!-- Service Area Start -->
-    <section class="appointment-area hp-1 pt-120 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
-                    <div class="appointment-intro hp-1">
-                        <!-- <h6 class="small-title hp-1">get your service</h6> -->
-                        <h2>Contact</h2>
-                        <h4 class="text-white">484 Great West Road, <br> Hounslow TW5 0TA</h4>
-                        <h4 class="text-white">020 8814 0991</h4>
-                        <h4 class="text-white">www.bellaviva.uk</h4>
-                    </div>
-                </div>
-                <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
-                    <div class="appointment-content">
-                        <form action="mail.php">
-                            <div class="name f-left">
-                                <input type="text" placeholder="Enter your name">
+        <!-- Header Area Start -->
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-xl-2 col-lg-2 col-md-4 d-flex justify-content-start align-items-center">
+                            <div class="header-logo text-center">
+                                <a href="index.html">
+                                    <img src="./assets/img/bellaviva_logo.png"
+                                        alt class="img-fluid">
+                                </a>
                             </div>
-                            <div class="email fix">
-                                <input type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-12">
+                            <div
+                                class="header-info d-flex justify-content-end align-items-center">
+                                <div class="main-menu hp-1">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="#about">about</a></li>
+                                            <li><a href="#service">sevices</a></li>
+                                            <li><a href="#gallery">gallery</a></li>
+                                            <li><a href="#footer">contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
-                            <div class="phone f-left">
-                                <input type="tel" placeholder="Enter your phone">
-                            </div>
-                            <!-- <div class="subject fix">
-                                <select>
-                                    <option value="">Select subject</option>
-                                    <option value="">subject</option>
-                                    <option value="">subject</option>
-                                </select>
-                            </div>
-                            <div class="shedule-date f-left">
-                                <input type="date">
-                            </div> -->
-                            <div class="shedule-time fix">
-                                <input type="tel" placeholder="Add Shedule Time">
-                            </div>
-                            <div class="massage">
-                                <textarea rows="3" placeholder="Your Message"></textarea>
-                            </div>
-                            <button type="submit" class="blue-btn">make appointment</button>
-                        </form>
+                            <div class="mobile-menu"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="footer-copyright pt-30 pb-30">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-md-6 col-sm-12">
-                    <div class="copyright style-1 mt-10">
-                        <span>Copyright © 2023 Bellaviva</span>
+        </header>
+        <!-- Header Area End -->
+
+        <!-- Service details content -->
+        <section>
+            <div class="container">
+                <a class="btn pink-btn mt-5 mb-5" style="color: white;"
+                    onclick="goBack()" data-animation="fadeInUp"
+                    data-delay=".6s">Back</a>
+                <img hidden id="serviceImage1" alt="Service Image 1">
+                <img id="serviceImage2" src class="responsive-image"
+                    alt="Service Image 2">
+
+                <h1 class="mt-5 mb-5" id="serviceTitle"></h1>
+
+                <div class="table-responsive">
+                    <table id="serviceTable" class="table table-bordered">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2 class="mt-5">Service Description</h2>
+                <p hidden id="serviceDescription1"></p>
+                <p class="mt-3 text-justify" id="serviceDescription2"></p>
+
+                <div class="gallery mt-4">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/swedish massage.png" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/swedish massage.png">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Swedish Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/aromatherapy massaage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/aromatherapy massaage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Aromatherapy Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Thai massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Thai massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Thai Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/thai compress masassage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/thai compress masassage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Thai Herbal Compress</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Deep Tissue massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Deep Tissue massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Deep Tissue Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Indian head massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Indian head massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Indian head Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Hot Stone Therapy massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Hot Stone Therapy massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Hot Stone Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Hawaiian Lomi Lomi massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Hawaiian Lomi Lomi massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Hawaiian Lomi Lomi</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/reflexology  massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/reflexology  massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Reflexology Massage</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/ayurvedic massage.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/ayurvedic massage.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Ayurvedic Massage</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6 col-sm-12">
-                    <div class="copyright style-1 mt-10">
-                        <span><a href="http://kandianpro.co.uk/">Powered by KandianPRO</a></span>
+
+                <p class="mt-3 text-justify">These treatments are designed to
+                    address specific needs, promote detoxification, improve skin
+                    texture, and support overall well-being. Our skilled
+                    therapists will customize these services to meet your unique
+                    requirements, ensuring a revitalizing and satisfying
+                    experience. 
+                </p>
+
+                <div class="gallery mt-4">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Body lymphatic drainage treatment.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image" href="assets/img/gallery/Body lymphatic drainage treatment.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Body Lymphatic Treatment</h3>
+                                    <h5 class="text-center">60 Mins</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Body Exfoliation Therapy.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Body Exfoliation Therapy.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Body Exfoliation Therapy</h3>
+                                    <h5 class="text-center">60 Mins</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                            <div class="gallery-wrapper position-relative">
+                                <div class="gallery-image">
+                                    <img src="assets/img/gallery/Body Slimming Therapy.jpg" alt>
+                                    <div class="view-icon">
+                                        <a class="popup-image"
+                                            href="assets/img/gallery/Body Slimming Therapy.jpg">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <h3 class="text-center">Body Slimming Therapy</h3>
+                                    <h5 class="text-center">1Hrs 20 Mins</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-xl-4 col-md-4 col-sm-12">
+
+                <hr style="border-color: #657583;">
+
+                <h2>Contact Details</h2>
+                <ul class="mt-3">
+                    <li>484 Great West Road, Hounslow TW5 0TA</li>
+                    <li>Phone: 020 8814 0991</li>
+                    <li>Email: bellaviva.clinic@gmail.com</li>
+                </ul>
+
+                <hr style="border-color: #657583;">
+                <br>
+            </div>
+        </section>
+
+        <!-- Footer Area Start -->
+        <section id="contact" class="appointment-area hp-1 pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                        <div class="appointment-intro hp-1">
+                            <h3 class="text-white">Contact</h3>
+                            <div class="contact-info">
+                                <h5>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="text-white">484 Great West Road, Hounslow TW5 0TA</span>
+                                </h5>
+                                <h5>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span class="text-white">0208 569 4545</span>
+                                </h5>
+                                <h5>
+                                    <i class="fas fa-globe"></i>
+                                    <span class="text-white">www.bellavivaskin.uk</span>
+                                </h5>
+                            </div>
+        
+                            <br>
+        
+                            <h3 class="text-white">We Are Open</h3>
+                            <h5 class="text-white">Monday - Saturday: 10 A.M to 7 P.M <br> Sunday Closed</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                        <div class="appointment-content">
+                            <form action="mail.php">
+                                <div class="name f-left">
+                                    <input type="text" placeholder="Enter your name">
+                                </div>
+                                <div class="email fix">
+                                    <input type="email" placeholder="Enter your email">
+                                </div>
+                                <div class="phone f-left">
+                                    <input type="tel" placeholder="Enter your phone">
+                                </div>
+                                <!-- <div class="subject fix">
+                                    <select>
+                                        <option value="">Select subject</option>
+                                        <option value="">subject</option>
+                                        <option value="">subject</option>
+                                    </select>
+                                </div>
+                                <div class="shedule-date f-left">
+                                    <input type="date">
+                                </div> -->
+                                <div class="shedule-time fix">
+                                    <input type="tel" placeholder="Add Shedule Time">
+                                </div>
+                                <div class="massage">
+                                    <textarea rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="blue-btn">make appointment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer-copyright pt-30 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <div class="copyright style-1 mt-10">
+                            <span>Copyright © 2023 Bellaviva</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <div class="copyright style-1 mt-10">
+                            <span><a href="http://kandianpro.co.uk/">Powered by
+                                    KandianPRO</a></span>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-social-link text-right style-1">
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -236,30 +437,30 @@
                         </ul>
                     </div>
                 </div> -->
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Service Area End -->
+        <!-- Footer Area End -->
 
-     <!-- JS here -->
-     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-     <script src="assets/js/popper.min.js"></script>
-     <script src="assets/js/bootstrap.min.js"></script>
-     <script src="assets/js/owl.carousel.min.js"></script>
-     <script src="assets/js/isotope.pkgd.min.js"></script>
-     <script src="assets/js/one-page-nav-min.js"></script>
-     <script src="assets/js/slick.min.js"></script>
-     <script src="assets/js/jquery.meanmenu.min.js"></script>
-     <script src="assets/js/ajax-form.js"></script>
-     <script src="assets/js/wow.min.js"></script>
-     <script src="assets/js/jquery.scrollUp.min.js"></script>
-     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-     <script src="assets/js/plugins.js"></script>
-     <script src="assets/js/main.js"></script>
+        <!-- JS here -->
+        <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/one-page-nav-min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.scrollUp.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
 
-     <script>
+        <script>
         // Retrieve service data from session storage
         var imgSrc1 = sessionStorage.getItem('imgSrc1');
         var imgSrc2 = sessionStorage.getItem('imgSrc2');
@@ -290,7 +491,6 @@
             window.history.back();
         }
     </script>
-    
-    
-</body>
+
+    </body>
 </html>
