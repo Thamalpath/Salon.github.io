@@ -323,7 +323,7 @@ var services = [
 	{
 		category: "injectables",
 		imgSrc1: "./assets/img/services/Rejuvenating_treatment.png",
-		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-05.png",
+		imgSrc2: "https://wphix.com/template/kindspa-prv/assets/img/slider/slider-04.png",
 		title: "Rejuvenating Treatment",
 		description1: "Discover rejuvenating treatments at Bellaviva Skin Clinic. Achieve youthful, radiant skin through advanced techniques and personalized care.",
         description2: "Transform your skin with rejuvenating treatments at Bellaviva Skin Clinic. Our advanced techniques and state-of-the-art technology offer a range of options to address fine lines, wrinkles, texture, and tone. Experience gentle exfoliation and collagen stimulation with microdermabrasion or chemical peels. Opt for laser skin rejuvenation for smoother, more youthful skin. Our skincare experts customize a comprehensive treatment plan, incorporating tailored skincare routines and lifestyle recommendations. Trust our highly trained professionals for outstanding care in a relaxing environment. Reveal your natural beauty and radiance at Bellaviva Skin Clinic. Schedule a consultation today.",
