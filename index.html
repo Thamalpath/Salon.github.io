@@ -470,7 +470,7 @@
                         </div>
                         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                             <div class="appointment-content">
-                                <form action="mail.php">
+                                <form action="mail.php" method="POST">
                                     <div class="name f-left">
                                         <input type="text" placeholder="Enter your name">
                                     </div>
@@ -486,12 +486,22 @@
                                             <option value="">subject</option>
                                             <option value="">subject</option>
                                         </select>
-                                    </div>
-                                    <div class="shedule-date f-left">
-                                        <input type="date">
                                     </div> -->
+                                    <div class="shedule-date fix">
+                                        <input type="date">
+                                    </div>
                                     <div class="shedule-time fix">
-                                        <input type="tel" placeholder="Add Shedule Time">
+                                        <select type="tel" placeholder="Add Shedule Time">
+                                            <option value="">Select Time</option>
+                                            <option value="">10:00 AM</option>
+                                            <option value="">11:00 AM</option>
+                                            <option value="">01:00 PM</option>
+                                            <option value="">02:00 PM</option>
+                                            <option value="">03:00 PM</option>
+                                            <option value="">04:00 PM</option>
+                                            <option value="">05:00 PM</option>
+                                            <option value="">06:00 PM</option>
+                                        </select>
                                     </div>
                                     <div class="massage">
                                         <textarea rows="3" placeholder="Your Message"></textarea>
